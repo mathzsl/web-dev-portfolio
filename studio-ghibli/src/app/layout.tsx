@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
+import { Header } from "./components/Header";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -19,9 +20,15 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body
-        className={`${poppins.className}  bg-gradient-to-r from-green-app-500 to-green-app-700 min-h-screen`}
+        className={`${poppins.className}  bg-gradient-to-r from-green-app-500 to-green-app-700`}
       >
-        {children}
+        <div className="max-w-screen-lg min-h-screen m-auto px-4">
+          <Header />
+
+          <main className="flex items-center justify-between h-app">
+            {children}
+          </main>
+        </div>
       </body>
     </html>
   );

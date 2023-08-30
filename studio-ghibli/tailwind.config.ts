@@ -14,6 +14,26 @@ const config: Config = {
           700: "#1A4855",
         },
       },
+
+      height: {
+        app: "calc(100vh - 6rem)",
+      },
+
+      keyframes: {
+        float: {
+          "0%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-50px)" },
+          "100%": { transform: "translateY(0px)" },
+        },
+      },
+
+      animation: {
+        float: "float 6s infinite",
+      },
+
+      skew: {
+        'skew-app': '-24deg'
+      }
     },
   },
   plugins: [],
