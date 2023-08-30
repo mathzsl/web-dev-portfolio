@@ -10,6 +10,9 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "A viagem de Chihiro",
+  icons: {
+    icon: "/icons/favicon.ico",
+  },
 };
 
 export default function RootLayout({
@@ -25,7 +28,7 @@ export default function RootLayout({
         <div className="max-w-screen-lg min-h-screen m-auto px-4">
           <Header />
 
-          <main className="flex items-center justify-between h-app">
+          <main className="flex flex-col-reverse items-center pb-24 mt-24 justify-between lg:h-app lg:flex-row lg:pb-0 lg:mt-0">
             {children}
           </main>
         </div>

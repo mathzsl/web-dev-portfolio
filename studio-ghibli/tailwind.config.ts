@@ -22,7 +22,7 @@ const config: Config = {
       keyframes: {
         float: {
           "0%": { transform: "translateY(0px)" },
-          "50%": { transform: "translateY(-50px)" },
+          "50%": { transform: "translateY(-3.125rem)" },
           "100%": { transform: "translateY(0px)" },
         },
       },

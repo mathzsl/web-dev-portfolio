@@ -7,7 +7,7 @@ export default function Home() {
         <strong className="font-bold text-xl text-zinc-100">
           HAYAO MIYAZAKI
         </strong>
-        <h1 className="font-extrabold text-7xl text-zinc-100">
+        <h1 className="font-extrabold text-5xl md:text-7xl text-zinc-100">
           A VIAGEM DE CHIHIRO
         </h1>
 
@@ -16,21 +16,30 @@ export default function Home() {
           desobedecem são transformados em animais.
         </p>
 
-        <div className="flex items-center gap-3 mt-14">
-          <Button href="#" target="_blank">
-            <span className="flex items-center gap-2 -skew-x-skew-app text-base">
+        <div className="flex flex-col gap-3 mt-14 md:flex-row md:items-center">
+          <Button
+            href="https://www.netflix.com/br/title/60023642"
+            target="_blank"
+          >
+            <span className="flex justify-center gap-2 -skew-x-skew-app text-base">
               <Play className="w-5 h-5 " />
               ASSISTA AGORA
             </span>
           </Button>
 
-          <Button href="#" target="_blank" variant="secondary">
-            <span className="flex -skew-x-skew-app">ASSISTA O TRAILER</span>
+          <Button
+            href="https://www.youtube.com/watch?v=ByXuk9QqQkk"
+            target="_blank"
+            variant="secondary"
+          >
+            <span className="flex -skew-x-skew-app justify-center">
+              ASSISTA O TRAILER
+            </span>
           </Button>
         </div>
       </section>
 
-      <section>
+      <section className="pl-4">
         <img
           src="/images/illustration.png"
           alt="Kaonashi"
