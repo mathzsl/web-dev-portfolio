@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body
-        className={`${poppins.className}  bg-gradient-to-r from-green-app-500 to-green-app-700`}
+        className={`${poppins.className} bg-gradient-to-b md:bg-gradient-to-r from-green-app-500 to-green-app-700`}
       >
         <div className="max-w-screen-lg min-h-screen m-auto px-4">
           <Header />
